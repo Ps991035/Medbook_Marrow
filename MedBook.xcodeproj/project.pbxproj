@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8374F31D2D8445A400D5BD5A /* MBBooksListAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374F31C2D8445A400D5BD5A /* MBBooksListAPIRepository.swift */; };
+		8374F31F2D84472000D5BD5A /* MBHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374F31E2D84472000D5BD5A /* MBHomeViewModel.swift */; };
+		8374F3212D844B8A00D5BD5A /* MBBookListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374F3202D844B7D00D5BD5A /* MBBookListModel.swift */; };
+		8374F3272D8450CE00D5BD5A /* MBBookSortCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8374F3262D8450CE00D5BD5A /* MBBookSortCollectionViewCell.xib */; };
+		8374F3282D8450CE00D5BD5A /* MBBookSortCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374F3252D8450CE00D5BD5A /* MBBookSortCollectionViewCell.swift */; };
+		8374F32A2D84522A00D5BD5A /* MBSortOptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8374F3292D84522A00D5BD5A /* MBSortOptionModel.swift */; };
+		837E57E42A82A9C4001D7541 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E57E32A82A9C4001D7541 /* AppDelegate.swift */; };
+		837E57E62A82A9C4001D7541 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E57E52A82A9C4001D7541 /* SceneDelegate.swift */; };
+		837E57E82A82A9C4001D7541 /* MBLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E57E72A82A9C4001D7541 /* MBLandingViewController.swift */; };
+		837E57EB2A82A9C4001D7541 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E57E92A82A9C4001D7541 /* Main.storyboard */; };
+		837E57ED2A82A9C9001D7541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837E57EC2A82A9C9001D7541 /* Assets.xcassets */; };
+		837E57F02A82A9CA001D7541 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E57EE2A82A9CA001D7541 /* LaunchScreen.storyboard */; };
+		837E57FB2A82A9CA001D7541 /* MedBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E57FA2A82A9CA001D7541 /* MedBookTests.swift */; };
+		837E58052A82A9CB001D7541 /* MedBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58042A82A9CB001D7541 /* MedBookUITests.swift */; };
+		837E58072A82A9CB001D7541 /* MedBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58062A82A9CB001D7541 /* MedBookUITestsLaunchTests.swift */; };
+		837E58162A82AECC001D7541 /* MBUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58152A82AECC001D7541 /* MBUtility.swift */; };
+		837E58182A82BAC9001D7541 /* MBSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58172A82BAC9001D7541 /* MBSignupViewController.swift */; };
+		837E581D2A85520F001D7541 /* SignupValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E581C2A85520F001D7541 /* SignupValidation.swift */; };
+		837E581F2A85523A001D7541 /* SignupValidationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E581E2A85523A001D7541 /* SignupValidationFactory.swift */; };
+		837E58212A855262001D7541 /* SignupEmailValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58202A855262001D7541 /* SignupEmailValidation.swift */; };
+		837E58232A855288001D7541 /* SignupLengthValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58222A855288001D7541 /* SignupLengthValidation.swift */; };
+		837E58252A8552A5001D7541 /* SignupSpecialCharacterValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58242A8552A5001D7541 /* SignupSpecialCharacterValidation.swift */; };
+		837E58272A8552C0001D7541 /* SignupUppercaseValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58262A8552C0001D7541 /* SignupUppercaseValidation.swift */; };
+		837E58292A8552DC001D7541 /* SignupValidationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58282A8552DB001D7541 /* SignupValidationManager.swift */; };
+		837E582B2A855328001D7541 /* MBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E582A2A855328001D7541 /* MBExtension.swift */; };
+		837E582E2A855A37001D7541 /* LoginValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E582D2A855A37001D7541 /* LoginValidation.swift */; };
+		837E58312A855B9A001D7541 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58302A855B9A001D7541 /* SignupViewModel.swift */; };
+		837E58342A855F9E001D7541 /* SignupValidationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E58332A855F9E001D7541 /* SignupValidationModel.swift */; };
+		8389C0852A8762700003252D /* MBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C0842A8762700003252D /* MBHomeViewController.swift */; };
+		8389C0892A87ED5B0003252D /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C0882A87ED5B0003252D /* UserDetails.swift */; };
+		8389C0902A88DE4C0003252D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8389C08F2A88DE4C0003252D /* Realm */; };
+		8389C0922A88DE4C0003252D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8389C0912A88DE4C0003252D /* RealmSwift */; };
+		8389C0942A88DE8D0003252D /* MBDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C0932A88DE8D0003252D /* MBDBHelper.swift */; };
+		8389C0962A88DFE00003252D /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C0952A88DFE00003252D /* RealmManager.swift */; };
+		8389C0982A88E07F0003252D /* UserDetailDBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C0972A88E07F0003252D /* UserDetailDBModel.swift */; };
+		8389C09A2A88F2EB0003252D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C0992A88F2EB0003252D /* LoginViewModel.swift */; };
+		8389C09C2A8944500003252D /* MBConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389C09B2A8944500003252D /* MBConstants.swift */; };
+		839F1DBD2D84834200281FE8 /* MBBookTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 839F1DBC2D84834200281FE8 /* MBBookTableViewCell.xib */; };
+		839F1DBE2D84834200281FE8 /* MBBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1DBB2D84834200281FE8 /* MBBookTableViewCell.swift */; };
+		839F1DC22D8487B400281FE8 /* MBBookListModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1DC12D8487B400281FE8 /* MBBookListModelCell.swift */; };
+		839F1DC42D848D7200281FE8 /* MBBookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1DC32D848D6600281FE8 /* MBBookCell.swift */; };
+		839F1DC62D84B89200281FE8 /* MBBookMarkDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1DC52D84B89200281FE8 /* MBBookMarkDBHelper.swift */; };
+		839F1DC82D84C45700281FE8 /* MBBookMarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F1DC72D84C45700281FE8 /* MBBookMarkViewController.swift */; };
+		83AA945E2A869DAA00689F19 /* MBDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA945D2A869DAA00689F19 /* MBDataRepository.swift */; };
+		83AA94602A869DFB00689F19 /* MBCountryListAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA945F2A869DFB00689F19 /* MBCountryListAPIRepository.swift */; };
+		83AA94632A869E5E00689F19 /* BasicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA94622A869E5E00689F19 /* BasicService.swift */; };
+		83AA94652A869E6E00689F19 /* HttpBasicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA94642A869E6E00689F19 /* HttpBasicService.swift */; };
+		83AA94672A869F8100689F19 /* MBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA94662A869F8100689F19 /* MBHelper.swift */; };
+		83AA94692A869FF600689F19 /* MBFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA94682A869FF600689F19 /* MBFactory.swift */; };
+		83FA5E682A86A24F008CA53B /* MBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA5E672A86A24F008CA53B /* MBLoginViewController.swift */; };
+		83FA5E6A2A874ACF008CA53B /* MBCountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA5E692A874ACF008CA53B /* MBCountryListModel.swift */; };
+		83FA5E6C2A874C2F008CA53B /* MBRepositoryParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA5E6B2A874C2F008CA53B /* MBRepositoryParam.swift */; };
+		83FA5E6F2A874E30008CA53B /* MBAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA5E6E2A874E2F008CA53B /* MBAdapter.swift */; };
+		83FA5E712A874E3D008CA53B /* MBDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA5E702A874E3D008CA53B /* MBDataAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		837E57F72A82A9CA001D7541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837E57D82A82A9C4001D7541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837E57DF2A82A9C4001D7541;
+			remoteInfo = MedBook;
+		};
+		837E58012A82A9CB001D7541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837E57D82A82A9C4001D7541 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837E57DF2A82A9C4001D7541;
+			remoteInfo = MedBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8374F31C2D8445A400D5BD5A /* MBBooksListAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBooksListAPIRepository.swift; sourceTree = "<group>"; };
+		8374F31E2D84472000D5BD5A /* MBHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeViewModel.swift; sourceTree = "<group>"; };
+		8374F3202D844B7D00D5BD5A /* MBBookListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListModel.swift; sourceTree = "<group>"; };
+		8374F3252D8450CE00D5BD5A /* MBBookSortCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookSortCollectionViewCell.swift; sourceTree = "<group>"; };
+		8374F3262D8450CE00D5BD5A /* MBBookSortCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBookSortCollectionViewCell.xib; sourceTree = "<group>"; };
+		8374F3292D84522A00D5BD5A /* MBSortOptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSortOptionModel.swift; sourceTree = "<group>"; };
+		837E57E02A82A9C4001D7541 /* MedBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		837E57E32A82A9C4001D7541 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		837E57E52A82A9C4001D7541 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		837E57E72A82A9C4001D7541 /* MBLandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLandingViewController.swift; sourceTree = "<group>"; };
+		837E57EA2A82A9C4001D7541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		837E57EC2A82A9C9001D7541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		837E57EF2A82A9CA001D7541 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		837E57F12A82A9CA001D7541 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837E57F62A82A9CA001D7541 /* MedBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		837E57FA2A82A9CA001D7541 /* MedBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedBookTests.swift; sourceTree = "<group>"; };
+		837E58002A82A9CB001D7541 /* MedBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		837E58042A82A9CB001D7541 /* MedBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedBookUITests.swift; sourceTree = "<group>"; };
+		837E58062A82A9CB001D7541 /* MedBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		837E58152A82AECC001D7541 /* MBUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBUtility.swift; sourceTree = "<group>"; };
+		837E58172A82BAC9001D7541 /* MBSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBSignupViewController.swift; sourceTree = "<group>"; };
+		837E581C2A85520F001D7541 /* SignupValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidation.swift; sourceTree = "<group>"; };
+		837E581E2A85523A001D7541 /* SignupValidationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationFactory.swift; sourceTree = "<group>"; };
+		837E58202A855262001D7541 /* SignupEmailValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailValidation.swift; sourceTree = "<group>"; };
+		837E58222A855288001D7541 /* SignupLengthValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLengthValidation.swift; sourceTree = "<group>"; };
+		837E58242A8552A5001D7541 /* SignupSpecialCharacterValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupSpecialCharacterValidation.swift; sourceTree = "<group>"; };
+		837E58262A8552C0001D7541 /* SignupUppercaseValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUppercaseValidation.swift; sourceTree = "<group>"; };
+		837E58282A8552DB001D7541 /* SignupValidationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationManager.swift; sourceTree = "<group>"; };
+		837E582A2A855328001D7541 /* MBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBExtension.swift; sourceTree = "<group>"; };
+		837E582D2A855A37001D7541 /* LoginValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidation.swift; sourceTree = "<group>"; };
+		837E58302A855B9A001D7541 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		837E58332A855F9E001D7541 /* SignupValidationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupValidationModel.swift; sourceTree = "<group>"; };
+		8389C0842A8762700003252D /* MBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHomeViewController.swift; sourceTree = "<group>"; };
+		8389C0882A87ED5B0003252D /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
+		8389C0932A88DE8D0003252D /* MBDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDBHelper.swift; sourceTree = "<group>"; };
+		8389C0952A88DFE00003252D /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		8389C0972A88E07F0003252D /* UserDetailDBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailDBModel.swift; sourceTree = "<group>"; };
+		8389C0992A88F2EB0003252D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		8389C09B2A8944500003252D /* MBConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBConstants.swift; sourceTree = "<group>"; };
+		839F1DBB2D84834200281FE8 /* MBBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookTableViewCell.swift; sourceTree = "<group>"; };
+		839F1DBC2D84834200281FE8 /* MBBookTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MBBookTableViewCell.xib; sourceTree = "<group>"; };
+		839F1DC12D8487B400281FE8 /* MBBookListModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookListModelCell.swift; sourceTree = "<group>"; };
+		839F1DC32D848D6600281FE8 /* MBBookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookCell.swift; sourceTree = "<group>"; };
+		839F1DC52D84B89200281FE8 /* MBBookMarkDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookMarkDBHelper.swift; sourceTree = "<group>"; };
+		839F1DC72D84C45700281FE8 /* MBBookMarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookMarkViewController.swift; sourceTree = "<group>"; };
+		83AA945D2A869DAA00689F19 /* MBDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDataRepository.swift; sourceTree = "<group>"; };
+		83AA945F2A869DFB00689F19 /* MBCountryListAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCountryListAPIRepository.swift; sourceTree = "<group>"; };
+		83AA94622A869E5E00689F19 /* BasicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicService.swift; sourceTree = "<group>"; };
+		83AA94642A869E6E00689F19 /* HttpBasicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpBasicService.swift; sourceTree = "<group>"; };
+		83AA94662A869F8100689F19 /* MBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBHelper.swift; sourceTree = "<group>"; };
+		83AA94682A869FF600689F19 /* MBFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBFactory.swift; sourceTree = "<group>"; };
+		83FA5E672A86A24F008CA53B /* MBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBLoginViewController.swift; sourceTree = "<group>"; };
+		83FA5E692A874ACF008CA53B /* MBCountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBCountryListModel.swift; sourceTree = "<group>"; };
+		83FA5E6B2A874C2F008CA53B /* MBRepositoryParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRepositoryParam.swift; sourceTree = "<group>"; };
+		83FA5E6E2A874E2F008CA53B /* MBAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBAdapter.swift; sourceTree = "<group>"; };
+		83FA5E702A874E3D008CA53B /* MBDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBDataAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		837E57DD2A82A9C4001D7541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8389C0922A88DE4C0003252D /* RealmSwift in Frameworks */,
+				8389C0902A88DE4C0003252D /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E57F32A82A9CA001D7541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E57FD2A82A9CB001D7541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8374F3222D84509B00D5BD5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8374F3242D8450AB00D5BD5A /* TableViewCell */,
+				8374F3232D8450A100D5BD5A /* CollectionViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8374F3232D8450A100D5BD5A /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8374F3252D8450CE00D5BD5A /* MBBookSortCollectionViewCell.swift */,
+				8374F3262D8450CE00D5BD5A /* MBBookSortCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		8374F3242D8450AB00D5BD5A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				839F1DC32D848D6600281FE8 /* MBBookCell.swift */,
+				839F1DBB2D84834200281FE8 /* MBBookTableViewCell.swift */,
+				839F1DBC2D84834200281FE8 /* MBBookTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		837E57D72A82A9C4001D7541 = {
+			isa = PBXGroup;
+			children = (
+				837E57E22A82A9C4001D7541 /* MedBook */,
+				837E57F92A82A9CA001D7541 /* MedBookTests */,
+				837E58032A82A9CB001D7541 /* MedBookUITests */,
+				837E57E12A82A9C4001D7541 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		837E57E12A82A9C4001D7541 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				837E57E02A82A9C4001D7541 /* MedBook.app */,
+				837E57F62A82A9CA001D7541 /* MedBookTests.xctest */,
+				837E58002A82A9CB001D7541 /* MedBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		837E57E22A82A9C4001D7541 /* MedBook */ = {
+			isa = PBXGroup;
+			children = (
+				8374F3222D84509B00D5BD5A /* Cells */,
+				83FA5E6D2A874E16008CA53B /* Adapter */,
+				83AA94612A869E4C00689F19 /* Service */,
+				83AA945C2A869D8500689F19 /* Repository */,
+				83AA945B2A869D7D00689F19 /* Factory */,
+				837E58322A855F73001D7541 /* Models */,
+				837E582F2A855B83001D7541 /* ViewModels */,
+				837E58192A855187001D7541 /* Validations */,
+				837E58142A82AEAF001D7541 /* Utility */,
+				837E58132A82AA0E001D7541 /* ViewControllers */,
+				837E57E32A82A9C4001D7541 /* AppDelegate.swift */,
+				837E57E52A82A9C4001D7541 /* SceneDelegate.swift */,
+				837E57E92A82A9C4001D7541 /* Main.storyboard */,
+				837E57EC2A82A9C9001D7541 /* Assets.xcassets */,
+				837E57EE2A82A9CA001D7541 /* LaunchScreen.storyboard */,
+				837E57F12A82A9CA001D7541 /* Info.plist */,
+			);
+			path = MedBook;
+			sourceTree = "<group>";
+		};
+		837E57F92A82A9CA001D7541 /* MedBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				837E57FA2A82A9CA001D7541 /* MedBookTests.swift */,
+			);
+			path = MedBookTests;
+			sourceTree = "<group>";
+		};
+		837E58032A82A9CB001D7541 /* MedBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				837E58042A82A9CB001D7541 /* MedBookUITests.swift */,
+				837E58062A82A9CB001D7541 /* MedBookUITestsLaunchTests.swift */,
+			);
+			path = MedBookUITests;
+			sourceTree = "<group>";
+		};
+		837E58132A82AA0E001D7541 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				837E57E72A82A9C4001D7541 /* MBLandingViewController.swift */,
+				837E58172A82BAC9001D7541 /* MBSignupViewController.swift */,
+				83FA5E672A86A24F008CA53B /* MBLoginViewController.swift */,
+				8389C0842A8762700003252D /* MBHomeViewController.swift */,
+				839F1DC72D84C45700281FE8 /* MBBookMarkViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		837E58142A82AEAF001D7541 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				837E58152A82AECC001D7541 /* MBUtility.swift */,
+				837E582A2A855328001D7541 /* MBExtension.swift */,
+				83AA94662A869F8100689F19 /* MBHelper.swift */,
+				8389C0932A88DE8D0003252D /* MBDBHelper.swift */,
+				8389C0952A88DFE00003252D /* RealmManager.swift */,
+				8389C09B2A8944500003252D /* MBConstants.swift */,
+				839F1DC52D84B89200281FE8 /* MBBookMarkDBHelper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		837E58192A855187001D7541 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				837E582C2A855A06001D7541 /* LoginValidation */,
+				837E581A2A855196001D7541 /* SignupValidation */,
+			);
+			path = Validations;
+			sourceTree = "<group>";
+		};
+		837E581A2A855196001D7541 /* SignupValidation */ = {
+			isa = PBXGroup;
+			children = (
+				837E581E2A85523A001D7541 /* SignupValidationFactory.swift */,
+				837E58282A8552DB001D7541 /* SignupValidationManager.swift */,
+				837E581C2A85520F001D7541 /* SignupValidation.swift */,
+				837E58202A855262001D7541 /* SignupEmailValidation.swift */,
+				837E58222A855288001D7541 /* SignupLengthValidation.swift */,
+				837E58242A8552A5001D7541 /* SignupSpecialCharacterValidation.swift */,
+				837E58262A8552C0001D7541 /* SignupUppercaseValidation.swift */,
+			);
+			path = SignupValidation;
+			sourceTree = "<group>";
+		};
+		837E582C2A855A06001D7541 /* LoginValidation */ = {
+			isa = PBXGroup;
+			children = (
+				837E582D2A855A37001D7541 /* LoginValidation.swift */,
+			);
+			path = LoginValidation;
+			sourceTree = "<group>";
+		};
+		837E582F2A855B83001D7541 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				837E58302A855B9A001D7541 /* SignupViewModel.swift */,
+				8389C0992A88F2EB0003252D /* LoginViewModel.swift */,
+				8374F31E2D84472000D5BD5A /* MBHomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		837E58322A855F73001D7541 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8374F3202D844B7D00D5BD5A /* MBBookListModel.swift */,
+				837E58332A855F9E001D7541 /* SignupValidationModel.swift */,
+				83FA5E692A874ACF008CA53B /* MBCountryListModel.swift */,
+				8389C0882A87ED5B0003252D /* UserDetails.swift */,
+				8389C0972A88E07F0003252D /* UserDetailDBModel.swift */,
+				8374F3292D84522A00D5BD5A /* MBSortOptionModel.swift */,
+				839F1DC12D8487B400281FE8 /* MBBookListModelCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83AA945B2A869D7D00689F19 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				83AA94682A869FF600689F19 /* MBFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		83AA945C2A869D8500689F19 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				83AA945D2A869DAA00689F19 /* MBDataRepository.swift */,
+				83AA945F2A869DFB00689F19 /* MBCountryListAPIRepository.swift */,
+				83FA5E6B2A874C2F008CA53B /* MBRepositoryParam.swift */,
+				8374F31C2D8445A400D5BD5A /* MBBooksListAPIRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		83AA94612A869E4C00689F19 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				83AA94622A869E5E00689F19 /* BasicService.swift */,
+				83AA94642A869E6E00689F19 /* HttpBasicService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		83FA5E6D2A874E16008CA53B /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				83FA5E6E2A874E2F008CA53B /* MBAdapter.swift */,
+				83FA5E702A874E3D008CA53B /* MBDataAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		837E57DF2A82A9C4001D7541 /* MedBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837E580A2A82A9CB001D7541 /* Build configuration list for PBXNativeTarget "MedBook" */;
+			buildPhases = (
+				837E57DC2A82A9C4001D7541 /* Sources */,
+				837E57DD2A82A9C4001D7541 /* Frameworks */,
+				837E57DE2A82A9C4001D7541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MedBook;
+			packageProductDependencies = (
+				8389C08F2A88DE4C0003252D /* Realm */,
+				8389C0912A88DE4C0003252D /* RealmSwift */,
+			);
+			productName = MedBook;
+			productReference = 837E57E02A82A9C4001D7541 /* MedBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		837E57F52A82A9CA001D7541 /* MedBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837E580D2A82A9CB001D7541 /* Build configuration list for PBXNativeTarget "MedBookTests" */;
+			buildPhases = (
+				837E57F22A82A9CA001D7541 /* Sources */,
+				837E57F32A82A9CA001D7541 /* Frameworks */,
+				837E57F42A82A9CA001D7541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837E57F82A82A9CA001D7541 /* PBXTargetDependency */,
+			);
+			name = MedBookTests;
+			productName = MedBookTests;
+			productReference = 837E57F62A82A9CA001D7541 /* MedBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		837E57FF2A82A9CB001D7541 /* MedBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837E58102A82A9CB001D7541 /* Build configuration list for PBXNativeTarget "MedBookUITests" */;
+			buildPhases = (
+				837E57FC2A82A9CB001D7541 /* Sources */,
+				837E57FD2A82A9CB001D7541 /* Frameworks */,
+				837E57FE2A82A9CB001D7541 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837E58022A82A9CB001D7541 /* PBXTargetDependency */,
+			);
+			name = MedBookUITests;
+			productName = MedBookUITests;
+			productReference = 837E58002A82A9CB001D7541 /* MedBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		837E57D82A82A9C4001D7541 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					837E57DF2A82A9C4001D7541 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					837E57F52A82A9CA001D7541 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 837E57DF2A82A9C4001D7541;
+					};
+					837E57FF2A82A9CB001D7541 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 837E57DF2A82A9C4001D7541;
+					};
+				};
+			};
+			buildConfigurationList = 837E57DB2A82A9C4001D7541 /* Build configuration list for PBXProject "MedBook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 837E57D72A82A9C4001D7541;
+			packageReferences = (
+				8389C08E2A88DE4C0003252D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 837E57E12A82A9C4001D7541 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				837E57DF2A82A9C4001D7541 /* MedBook */,
+				837E57F52A82A9CA001D7541 /* MedBookTests */,
+				837E57FF2A82A9CB001D7541 /* MedBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		837E57DE2A82A9C4001D7541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8374F3272D8450CE00D5BD5A /* MBBookSortCollectionViewCell.xib in Resources */,
+				837E57F02A82A9CA001D7541 /* LaunchScreen.storyboard in Resources */,
+				837E57ED2A82A9C9001D7541 /* Assets.xcassets in Resources */,
+				839F1DBD2D84834200281FE8 /* MBBookTableViewCell.xib in Resources */,
+				837E57EB2A82A9C4001D7541 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E57F42A82A9CA001D7541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E57FE2A82A9CB001D7541 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		837E57DC2A82A9C4001D7541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83AA94652A869E6E00689F19 /* HttpBasicService.swift in Sources */,
+				83FA5E682A86A24F008CA53B /* MBLoginViewController.swift in Sources */,
+				8374F31D2D8445A400D5BD5A /* MBBooksListAPIRepository.swift in Sources */,
+				8389C09A2A88F2EB0003252D /* LoginViewModel.swift in Sources */,
+				8374F3212D844B8A00D5BD5A /* MBBookListModel.swift in Sources */,
+				837E58182A82BAC9001D7541 /* MBSignupViewController.swift in Sources */,
+				83AA945E2A869DAA00689F19 /* MBDataRepository.swift in Sources */,
+				8389C0942A88DE8D0003252D /* MBDBHelper.swift in Sources */,
+				837E57E82A82A9C4001D7541 /* MBLandingViewController.swift in Sources */,
+				839F1DBE2D84834200281FE8 /* MBBookTableViewCell.swift in Sources */,
+				83FA5E6C2A874C2F008CA53B /* MBRepositoryParam.swift in Sources */,
+				83AA94672A869F8100689F19 /* MBHelper.swift in Sources */,
+				837E581D2A85520F001D7541 /* SignupValidation.swift in Sources */,
+				8389C09C2A8944500003252D /* MBConstants.swift in Sources */,
+				83AA94602A869DFB00689F19 /* MBCountryListAPIRepository.swift in Sources */,
+				8374F3282D8450CE00D5BD5A /* MBBookSortCollectionViewCell.swift in Sources */,
+				837E58162A82AECC001D7541 /* MBUtility.swift in Sources */,
+				837E58232A855288001D7541 /* SignupLengthValidation.swift in Sources */,
+				83FA5E6A2A874ACF008CA53B /* MBCountryListModel.swift in Sources */,
+				837E582B2A855328001D7541 /* MBExtension.swift in Sources */,
+				837E58312A855B9A001D7541 /* SignupViewModel.swift in Sources */,
+				839F1DC82D84C45700281FE8 /* MBBookMarkViewController.swift in Sources */,
+				837E57E42A82A9C4001D7541 /* AppDelegate.swift in Sources */,
+				837E58342A855F9E001D7541 /* SignupValidationModel.swift in Sources */,
+				839F1DC42D848D7200281FE8 /* MBBookCell.swift in Sources */,
+				8389C0852A8762700003252D /* MBHomeViewController.swift in Sources */,
+				839F1DC62D84B89200281FE8 /* MBBookMarkDBHelper.swift in Sources */,
+				837E57E62A82A9C4001D7541 /* SceneDelegate.swift in Sources */,
+				837E58272A8552C0001D7541 /* SignupUppercaseValidation.swift in Sources */,
+				83FA5E6F2A874E30008CA53B /* MBAdapter.swift in Sources */,
+				839F1DC22D8487B400281FE8 /* MBBookListModelCell.swift in Sources */,
+				837E58292A8552DC001D7541 /* SignupValidationManager.swift in Sources */,
+				837E582E2A855A37001D7541 /* LoginValidation.swift in Sources */,
+				83AA94692A869FF600689F19 /* MBFactory.swift in Sources */,
+				8389C0962A88DFE00003252D /* RealmManager.swift in Sources */,
+				8374F31F2D84472000D5BD5A /* MBHomeViewModel.swift in Sources */,
+				8389C0982A88E07F0003252D /* UserDetailDBModel.swift in Sources */,
+				83FA5E712A874E3D008CA53B /* MBDataAdapter.swift in Sources */,
+				837E581F2A85523A001D7541 /* SignupValidationFactory.swift in Sources */,
+				837E58252A8552A5001D7541 /* SignupSpecialCharacterValidation.swift in Sources */,
+				83AA94632A869E5E00689F19 /* BasicService.swift in Sources */,
+				837E58212A855262001D7541 /* SignupEmailValidation.swift in Sources */,
+				8389C0892A87ED5B0003252D /* UserDetails.swift in Sources */,
+				8374F32A2D84522A00D5BD5A /* MBSortOptionModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E57F22A82A9CA001D7541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837E57FB2A82A9CA001D7541 /* MedBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837E57FC2A82A9CB001D7541 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837E58072A82A9CB001D7541 /* MedBookUITestsLaunchTests.swift in Sources */,
+				837E58052A82A9CB001D7541 /* MedBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		837E57F82A82A9CA001D7541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837E57DF2A82A9C4001D7541 /* MedBook */;
+			targetProxy = 837E57F72A82A9CA001D7541 /* PBXContainerItemProxy */;
+		};
+		837E58022A82A9CB001D7541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837E57DF2A82A9C4001D7541 /* MedBook */;
+			targetProxy = 837E58012A82A9CB001D7541 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		837E57E92A82A9C4001D7541 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837E57EA2A82A9C4001D7541 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		837E57EE2A82A9CA001D7541 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837E57EF2A82A9CA001D7541 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		837E58082A82A9CB001D7541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		837E58092A82A9CB001D7541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		837E580B2A82A9CB001D7541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedBook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pritesh.MedBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		837E580C2A82A9CB001D7541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MedBook/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pritesh.MedBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		837E580E2A82A9CB001D7541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pritesh.MedBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MedBook";
+			};
+			name = Debug;
+		};
+		837E580F2A82A9CB001D7541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pritesh.MedBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MedBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MedBook";
+			};
+			name = Release;
+		};
+		837E58112A82A9CB001D7541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pritesh.MedBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MedBook;
+			};
+			name = Debug;
+		};
+		837E58122A82A9CB001D7541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pritesh.MedBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MedBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		837E57DB2A82A9C4001D7541 /* Build configuration list for PBXProject "MedBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837E58082A82A9CB001D7541 /* Debug */,
+				837E58092A82A9CB001D7541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837E580A2A82A9CB001D7541 /* Build configuration list for PBXNativeTarget "MedBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837E580B2A82A9CB001D7541 /* Debug */,
+				837E580C2A82A9CB001D7541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837E580D2A82A9CB001D7541 /* Build configuration list for PBXNativeTarget "MedBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837E580E2A82A9CB001D7541 /* Debug */,
+				837E580F2A82A9CB001D7541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837E58102A82A9CB001D7541 /* Build configuration list for PBXNativeTarget "MedBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837E58112A82A9CB001D7541 /* Debug */,
+				837E58122A82A9CB001D7541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8389C08E2A88DE4C0003252D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8389C08F2A88DE4C0003252D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8389C08E2A88DE4C0003252D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8389C0912A88DE4C0003252D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8389C08E2A88DE4C0003252D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 837E57D82A82A9C4001D7541 /* Project object */;
+}
